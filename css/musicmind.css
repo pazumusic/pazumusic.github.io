@@ -1,0 +1,354 @@
+html, body {
+  height: 100%;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+  color: #fff;
+  background: #333;
+  overflow: hidden;
+}
+
+.music-mind-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.music-mind-page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.music-mind-body {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+}
+
+.music-mind-body a, p, h3, h4 {
+  text-align: center;
+}
+
+.music-mind-page-current, .no-js .music-mind-page {
+  visibility: visible;
+  z-index: 1;
+}
+
+.no-js body {
+  overflow: auto;
+}
+
+.music-mind-page-ontop {
+  z-index: 999;
+}
+
+/* Text Styles, Colors, Backgrounds */
+
+.music-mind-page h1 {
+  position: absolute;
+  font-weight: 300;
+  font-size: 4.4em;
+  line-height: 1;
+  letter-spacing: 6px;
+  margin: 0;
+  top: 12%;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: -0.3em;
+}
+
+.music-mind-page h1 span {
+  font-family: serif;
+  font-weight: 400;
+  font-size: 40%;
+  text-transform: none;
+  word-spacing: 0;
+  letter-spacing: 0;
+  display: block;
+  opacity: 0.4;
+}
+
+.music-mind-page h1 strong {
+  color: rgba(0,0,0,0.1);
+}
+
+.music-mind-page-1 {
+  background: #0ac2d2;
+}
+
+.music-mind-page-2 {
+  background: #7bb7fa;
+}
+
+.music-mind-page-3 {
+  background: #60d7a9;
+}
+
+.music-mind-page-4 {
+  background: #fdc162;
+}
+
+.music-mind-page-5 {
+  background: #fd6a62;
+}
+
+.music-mind-page-6 {
+  background: #f68dbb;
+}
+
+.button-container {
+  height: 20px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.strengths-container {
+  height: 20px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.email-form {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.email-form input {
+  height: 25px;
+  width: 250px;
+  border: 1px solid #aaa;
+}
+
+.email-form label {
+  color: #aaa;
+}
+
+.email-form-input {
+  margin: 10px;
+}
+
+.email-button {
+  width: 200px;
+  padding: 10;
+}
+
+.email-button strong {
+  text-transform: uppercase;
+  font-size: 2em;
+  display: block;
+}
+
+.response {
+  color: #ff0000;
+}
+
+div.music-mind-result {
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+  text-align: center
+}
+
+h3.music-mind-result {
+  text-transform: uppercase;
+}
+
+.quiz-button {
+  height:20px;
+  width:100px;
+  margin-left: 14px;
+  position:relative;
+}
+
+.music-mind-button, .music-mind-page-button {
+  position: relative;
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: auto;
+  padding: 0px 20px;
+  line-height: 50px;
+  height: 50px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: block;
+  font-family: Calibri, Arial, sans-serif;
+  box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+  background: #fff;
+  color: #aaa;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.music-mind-button:active, .music-mind-page-button:active {
+  box-shadow: 0 1px 0 rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 47.4375em) {
+  .music-mind-page h1 {
+    font-size: 3em;
+  }
+
+  .quiz-question p {
+    font-size: 1em;
+  }
+}
+
+/* --------------- Quiz Styles ---------------  */
+
+.quiz-question {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+.quiz-question p {
+  font-size: 2em;
+}
+
+.progress-bar {
+  height: 20px;
+  width: 250px;
+  margin: auto;
+  border: 1px solid #333;
+}
+
+.progress-bar-fill {
+  height: 20px;
+  width: 0;
+  background: #333;
+}
+
+.results-panel {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.results-panel li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #000;
+}
+
+/* --------------- Animation Styles --------------- */
+
+.moveToTop {
+	-webkit-animation: moveToTop .6s ease both;
+	animation: moveToTop .6s ease both;
+}
+
+.moveFromTop {
+	-webkit-animation: moveFromTop .6s ease both;
+	animation: moveFromTop .6s ease both;
+}
+
+.moveToBottom {
+	-webkit-animation: moveToBottom .6s ease both;
+	animation: moveToBottom .6s ease both;
+}
+
+.moveFromBottom {
+	-webkit-animation: moveFromBottom .6s ease both;
+	animation: moveFromBottom .6s ease both;
+}
+
+.moveToTopEasing {
+	-webkit-animation: moveToTop .7s ease-in-out both;
+	animation: moveToTop .7s ease-in-out both;
+}
+.moveToBottomEasing {
+	-webkit-animation: moveToBottom .7s ease-in-out both;
+	animation: moveToBottom .7s ease-in-out both;
+}
+
+@-webkit-keyframes moveToTop {
+	from { }
+	to { -webkit-transform: translateY(-100%); }
+}
+@keyframes moveToTop {
+	from { }
+	to { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveFromTop {
+	from { -webkit-transform: translateY(-100%); }
+}
+@keyframes moveFromTop {
+	from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+}
+
+@-webkit-keyframes moveToBottom {
+	from { }
+	to { -webkit-transform: translateY(100%); }
+}
+@keyframes moveToBottom {
+	from { }
+	to { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
+@-webkit-keyframes moveFromBottom {
+	from { -webkit-transform: translateY(100%); }
+}
+@keyframes moveFromBottom {
+	from { -webkit-transform: translateY(100%); transform: translateY(100%); }
+}
+
+.delay100 {
+	-webkit-animation-delay: .1s;
+	animation-delay: .1s;
+}
+.delay180 {
+	-webkit-animation-delay: .180s;
+	animation-delay: .180s;
+}
+.delay200 {
+	-webkit-animation-delay: .2s;
+	animation-delay: .2s;
+}
+.delay300 {
+	-webkit-animation-delay: .3s;
+	animation-delay: .3s;
+}
+.delay400 {
+	-webkit-animation-delay: .4s;
+	animation-delay: .4s;
+}
+.delay500 {
+	-webkit-animation-delay: .5s;
+	animation-delay: .5s;
+}
+.delay700 {
+	-webkit-animation-delay: .7s;
+	animation-delay: .7s;
+}
+.delay1000 {
+	-webkit-animation-delay: 1s;
+	animation-delay: 1s;
+}

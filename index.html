@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <title>PAZU | What Type of Music Mind Are You?</title>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://npmcdn.com/flickity@2.0.2/dist/flickity.pkgd.min.js"></script>
+    <script type='text/javascript' data-cfasync='false' src='https://dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='cc00880e0bf5419a0f39b77910c38a31' async='async'></script>
+    <script src="js/musicmind.js" type="text/javascript"></script>
+    <link type="text/css" rel="stylesheet" href="https://npmcdn.com/flickity@2.0.2/dist/flickity.min.css" />
+    <link type="text/css" rel="stylesheet" href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" />
+    <link type="text/css" rel="stylesheet" href="css/musicmind.css" />
+  </head>
+  <body>
+    <div class="music-mind-container">
+      <div class="music-mind-page music-mind-page-1">
+        <h1><span>PAZU</span> <strong> Welcome to Music Mind!</strong></h1>
+        <div class="music-mind-body">
+          <p>Want to find out the best way you learn music? Take this short questionnaire to find out more. There are 3 main pathways to learning music:</p>
+          <ul class="results-panel">
+            <li>ear</li>
+            <li>eye</li>
+            <li>create</li>
+          </ul>
+          <h4>Which one are you strongest in?</h4>
+          <button class="music-mind-page-button">
+            Take The Test!
+          </button>
+        </div>
+      </div>
+      <div class="music-mind-page music-mind-page-2">
+        <h1><span>Music Mind</span><strong id="question-number">Question #:1</strong> </h1>
+        <div class="music-mind-body">
+          <div class="main-carousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "accessibility": false, "prevNextButtons": false, "pageDots": false }'></div>
+          <div id="quiz-question-template" class="carousel-cell quiz-question" style="display:none">
+            <p></p>
+            <div class="answer-section">
+              <input type="radio" name="question-answer" value="1"> strongly disagree
+              <input type="radio" name="question-answer" value="2"> disagree
+              <input type="radio" name="question-answer" value="3"> somewhat disagree
+              <input type="radio" name="question-answer" value="4"> unsure
+              <input type="radio" name="question-answer" value="5"> somewhat agree
+              <input type="radio" name="question-answer" value="6"> agree
+              <input type="radio" name="question-answer" value="7"> strongly agree
+            </div>
+          </div>
+          <div id="tie-breaker-template" class="carousel-cell quiz-question" style="display:none">
+            <p>If you were going to learn a song right now, which way would you prefer?</p>
+            <div id="tie-breaker" class="answer-section">
+              <input type="radio" name="tie-breaker-answer" value="ear"> I'd love to learn by finding the sounds I hear.
+              <input type="radio" name="tie-breaker-answer" value="eye"> I'd like to learn by following visual queues.
+              <input type="radio" name="tie-breaker-answer" value="create"> I'd like to experiment and make up my own song.
+            </div>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+          </div>
+          <div class="button-container">
+            <button id="prev-question" class="quiz-button">Prev</button>
+            <button id="next-question" class="quiz-button" disabled="true">Next</button>
+          </div>
+          <button id="debug" class="music-mind-button">
+            Debug
+          </button>
+        </div>
+      </div>
+      <div class="music-mind-page music-mind-page-3">
+        <h1><span>You're results are being processed</span><strong>Almost Done!</strong></h1>
+        <div class="music-mind-body">
+          <p>
+            While you wait, please enter your email below to receive the top 5 tips to becoming a great musician, exciting updates and much more!
+          </p>
+          <div class="email-form">
+            <form id="signup-form" name="signup-form">
+              <div class="email-form-input">
+                <label for="mce-EMAIL">Email Address  <span class="asterisk">*</span></label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
+              </div>
+              <div class="email-form-input">
+              	<label for="mce-FNAME">First Name </label>
+                <input type="text" value="" name="FNAME" class="" id="mce-FNAME" />
+              </div>
+              <div class="email-form-input">
+                <label for="mce-LNAME">Last Name </label>
+                <input type="text" value="" name="LNAME" class="" id="mce-LNAME" />
+              </div>
+              <div class="response" id="error-response" style="display:none">
+                Please enter a valid email.
+              </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_97e39215ad5ad59c825210614_855559e5b6" tabindex="-1" value=""></div>
+              <div class="clear">
+                <button id="yes-button" class="email-button">
+                  <strong>Yes!</strong> I want to know the secrets to becoming a great musician!
+                </button>
+                <button id="no-button" class="email-button">
+                  <strong>No!</strong> I just want the results please.
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="music-mind-page music-mind-page-4">
+        <h1><span>You're music mind is: </span><strong class="music-mind-result"></strong></h1>
+        <div class="music-mind-body">
+          <ul class="results-panel">
+            <li>Eye: <span id="eye-result"></span></li>
+            <li>Ear: <span id="ear-result"></span></li>
+            <li>Create: <span id="create-result"></span></li>
+          </ul>
+          <h4>Your Strengths:</h4>
+          <div class="strengths-container">
+            <ul id="strengths-list"></ul>
+            <button class="music-mind-page-button">
+              Share Your Results!
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="music-mind-page music-mind-page-5">
+        <h1><span>Share Your Result</span> With Your Friends!</h1>
+        <div class="music-mind-body">
+          <h3 class="music-mind-result"></h3>
+          <div class="music-mind-result"></div>
+          <div class='shareaholic-canvas' data-app='share_buttons' data-app-id='25401234'></div>
+          <h3>What Makes You Different Makes You Unique!</h3>
+          <p> At PAZU, we understand this and believe that the WAY you learn music should be as important as WHAT you learn.</p>
+          <div id="final-cta">
+            <h3>Are You Sure You Don't Want To Keep In Touch?</h3>
+            <form id="final-signup-form" name="final-signup-form">
+              <div class="email-form">
+                <input type="email" value="" name="EMAIL" class="required email" placeholder="Email Address" id="mce-EMAIL" />
+                <div class="response" id="error-response" style="display:none">
+                  Please enter a valid email.
+                </div>
+              </div>
+              <button class="music-mind-button">
+                Sign-up!
+              </button>
+            </form>
+          </div>
+          <div id="final-message" style="display:none">
+            <h3>Thank You!</h3>
+            <p>We've sent you your first lesson on 3-ways to improve your music skill.</p>
+            <br/><br/>
+            <p><a href="http://www.pazumusic.com">Visit Pazumusic.com</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="music-mind-page music-mind-page-6">
+        <h1>Thank You!</h1>
+        <div class="music-mind-body">
+          <p>We've sent you your first lesson on 3-ways to improve your music skill.</p>
+          <br/><br/>
+          <p><a href="http://www.pazumusic.com">Visit Pazumusic.com</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

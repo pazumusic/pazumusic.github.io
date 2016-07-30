@@ -10,6 +10,7 @@ body {
   color: #fff;
   background-color: #225D75;
   overflow: auto;
+  background-image: url('../images/Background_Pattern.png');
 }
 
 p {
@@ -145,6 +146,10 @@ h4 {
   margin-top: 10px;
 }
 
+#strengths-list {
+    padding-bottom: 25px;
+}
+
 .email-form {
   width: 450px;
   margin-left: auto;
@@ -156,10 +161,12 @@ h4 {
 }
 
 .email-form input {
-  height: 35px;
-  width: 100%;
-  border: 1px solid #aaa;
-  border-radius: 5px;
+    height: 35px;
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    padding: 0 7px;
 }
 
 .email-form label {
@@ -495,4 +502,18 @@ button:disabled, button:disabled:hover {
 	height: 6px;
 	border-radius: 50%;
 	background: #fff;
+}
+
+/* Icons */
+
+li.ear {
+	background-image: url('../images/EAR.png');
+}
+
+li.eye {
+	background-image: url('../images/EYE.png');
+}
+
+li.create {
+	background-image: url('../images/CREATE.png');
 }

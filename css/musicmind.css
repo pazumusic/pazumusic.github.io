@@ -6,10 +6,22 @@ html, body {
 }
 
 body {
-  font-family: Calibri, Arial, sans-serif;
+  font-family: Proxima Nova, Arial, sans-serif;
   color: #fff;
-  background: #333;
-  overflow: hidden;
+  background-color: #225D75;
+  overflow: auto;
+}
+
+p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom: 65px;
+}
+
+strong, b {
+  font-weight:600;
 }
 
 .music-mind-container {
@@ -25,17 +37,22 @@ body {
   top: 0;
   left: 0;
   visibility: hidden;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .music-mind-body {
-  position: absolute;
-  top: 40%;
-  width: 100%;
+    position: relative;
+    padding-top: 5%;
+    width: 100%;
 }
 
 .music-mind-body a, p, h3, h4 {
   text-align: center;
+}
+
+h4 {
+   font-weight:600;
+   font-size:1.3rem;
 }
 
 .music-mind-page-current, .no-js .music-mind-page {
@@ -54,36 +71,39 @@ body {
 /* Text Styles, Colors, Backgrounds */
 
 .music-mind-page h1 {
-  position: absolute;
-  font-weight: 300;
-  font-size: 4.4em;
-  line-height: 1;
-  letter-spacing: 6px;
-  margin: 0;
-  top: 12%;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  word-spacing: -0.3em;
+    position: relative;
+    font-weight: 300 !important;
+    font-size: 3em;
+    line-height: 1;
+    letter-spacing: 0.1rem;
+    margin: 0;
+    padding-top: 75px;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .music-mind-page h1 span {
-  font-family: serif;
-  font-weight: 400;
-  font-size: 40%;
-  text-transform: none;
-  word-spacing: 0;
-  letter-spacing: 0;
-  display: block;
-  opacity: 0.4;
+    font-family: serif;
+    font-weight: 400;
+    font-size: 40%;
+    text-transform: none;
+    word-spacing: 0;
+    letter-spacing: 0;
+    display: block;
+    opacity: 0.4;
+    padding-bottom: 45px;
 }
 
 .music-mind-page h1 strong {
-  color: rgba(0,0,0,0.1);
+  color: #fff;
+  
 }
 
+/*** DISABLED BG COLORS ***
+
 .music-mind-page-1 {
-  background: #0ac2d2;
+  background: #225D75;
 }
 
 .music-mind-page-2 {
@@ -106,12 +126,15 @@ body {
   background: #f68dbb;
 }
 
+*** ***/
+
 .button-container {
-  height: 20px;
-  width: 250px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+    height: 20px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 40px 0;
 }
 
 .strengths-container {
@@ -133,22 +156,39 @@ body {
 }
 
 .email-form input {
-  height: 25px;
-  width: 250px;
+  height: 35px;
+  width: 100%;
   border: 1px solid #aaa;
+  border-radius: 5px;
 }
 
 .email-form label {
   color: #aaa;
+  font-size: 1.2rem;
 }
 
 .email-form-input {
-  margin: 10px;
+  margin: 18px 26px;
 }
 
 .email-button {
   width: 200px;
   padding: 10;
+}
+
+.email-button {
+    width: 196px;
+    padding: 10;
+    background-color: #efefef;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    height:115px;
+}
+
+.email-button:hover {
+	background-color:#434343;
+	color:#efefef;
 }
 
 .email-button strong {
@@ -157,8 +197,13 @@ body {
   display: block;
 }
 
+.yesno {
+	margin:0 26px;
+}
+
 .response {
   color: #ff0000;
+  margin:0 26px;
 }
 
 div.music-mind-result {
@@ -174,35 +219,57 @@ h3.music-mind-result {
 }
 
 .quiz-button {
-  height:20px;
-  width:100px;
-  margin-left: 14px;
-  position:relative;
+    height: 26px;
+    width: 100px;
+    margin-left: 14px;
+    position: relative;
+    font-size: 16px;
+    color: #D34335;
+    font-family: proxima nova, arial,sans-serif;
+    text-transform: uppercase;
+    border: none;
+    background-color: rgba(9,9,9,0);
+    cursor: pointer;
+}
+
+.quiz-button:hover {
+	color:#FF5343;
+}
+
+button:disabled, button:disabled:hover {
+	color: #1B4D62;
+	cursor:default;
 }
 
 .music-mind-button, .music-mind-page-button {
-  position: relative;
-  border: none;
-  font-size: 13px;
-  font-weight: 700;
-  text-transform: uppercase;
-  margin: auto;
-  padding: 0px 20px;
-  line-height: 50px;
-  height: 50px;
-  letter-spacing: 1px;
-  cursor: pointer;
-  display: block;
-  font-family: Calibri, Arial, sans-serif;
-  box-shadow: 0 3px 0 rgba(0,0,0,0.1);
-  background: #fff;
-  color: #aaa;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    position: relative;
+    border: none;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 5px 40px;
+    line-height: 50px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: block;
+    box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+    background: #fff;
+    color: #444;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+    user-select: none;
+    border-radius: 50px;
+	transition:.08s;
+}
+
+.music-mind-button:hover, .music-mind-page-button:hover {
+    background: #333;
+    color: #fff;
+    transition:.1s;
 }
 
 .music-mind-button:active, .music-mind-page-button:active {
@@ -227,21 +294,30 @@ h3.music-mind-result {
   text-align: center;
 }
 
+#question-number {
+    color: #D34335;
+    font-size: 1.5rem;
+}
+
 .quiz-question p {
   font-size: 2em;
+  letter-spacing:1px;
 }
 
 .progress-bar {
-  height: 20px;
-  width: 250px;
-  margin: auto;
-  border: 1px solid #333;
+    height: 25px;
+    width: 65%;
+    margin: auto;
+    border: 1px solid #D34335;
+    max-width: 650px;
+    border-radius: 25px;
 }
 
 .progress-bar-fill {
-  height: 20px;
-  width: 0;
-  background: #333;
+    height: 25px;
+    width: 0;
+    background: #D34335;
+    border-radius: 25px 0 0 25px;
 }
 
 .results-panel {
@@ -351,4 +427,72 @@ h3.music-mind-result {
 .delay1000 {
 	-webkit-animation-delay: 1s;
 	animation-delay: 1s;
+}
+
+/* Radio Button Styles */
+
+.answer-section {
+	display: inline-block;
+	width: ;
+	height: 210px;
+/*	margin: 10px;
+	padding: 30px;
+*/	text-align: left;
+	vertical-align: top;
+	background-color: #225D75;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+	font-size:18px;
+}
+
+.control {
+	font-size: 18px;
+	position: relative;
+	margin-bottom: 15px;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.control_indicator {
+	position: absolute;
+	top: 0px;
+	left: 0;
+	width: 25px;
+	height: 25px;
+	background: #225D75;
+	border:1px solid #D34335;
+}
+
+.control-radio .control_indicator {
+	border-radius: 50%;
+}
+
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+	background: #D34335;
+	transition:.0s;
+}
+
+/* Checked state */
+.control input:checked ~ .control_indicator {
+	background: #fff;
+	transition:.0s;
+	width:15px;
+	height:15px;
+	border:6px solid #D34335;
+}
+ 
+/* Radio button inner circle */
+.control-radio .control_indicator:after {
+	top: 7px;
+	left: 7px;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	background: #fff;
 }

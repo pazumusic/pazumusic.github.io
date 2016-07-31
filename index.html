@@ -12,6 +12,8 @@
     <link type="text/css" rel="stylesheet" href="https://npmcdn.com/flickity@2.0.2/dist/flickity.min.css" />
     <link type="text/css" rel="stylesheet" href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" />
     <link type="text/css" rel="stylesheet" href="css/musicmind.css" />
+    <script src="https://use.typekit.net/hec8rxm.js"></script>
+	  <script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <div class="music-mind-container">
@@ -20,9 +22,9 @@
         <div class="music-mind-body">
           <p>Want to find out the best way you learn music? Take this short questionnaire to find out more. There are 3 main pathways to learning music:</p>
           <ul class="results-panel">
-            <li>ear</li>
-            <li>eye</li>
-            <li>create</li>
+            <li class="ear">ear</li>
+            <li class="eye">eye</li>
+            <li class="create">create</li>
           </ul>
           <h4>Which one are you strongest in?</h4>
           <button class="music-mind-page-button">
@@ -37,21 +39,51 @@
           <div id="quiz-question-template" class="carousel-cell quiz-question" style="display:none">
             <p></p>
             <div class="answer-section">
-              <input type="radio" name="question-answer" value="1"> strongly disagree
-              <input type="radio" name="question-answer" value="2"> disagree
-              <input type="radio" name="question-answer" value="3"> somewhat disagree
-              <input type="radio" name="question-answer" value="4"> unsure
-              <input type="radio" name="question-answer" value="5"> somewhat agree
-              <input type="radio" name="question-answer" value="6"> agree
-              <input type="radio" name="question-answer" value="7"> strongly agree
+              <label class="control control-radio">strongly disagree
+              <input type="radio" name="question-answer" value="1">
+              <span class="control_indicator"></span>
+              </label>
+              <label class="control control-radio">disagree
+              <input type="radio" name="question-answer" value="2">
+              <span class="control_indicator"></span>
+              </label>
+              <label class="control control-radio">somewhat disagree
+              <input type="radio" name="question-answer" value="3">
+              <span class="control_indicator"></span>
+              </label>
+              <label class="control control-radio">unsure
+              <input type="radio" name="question-answer" value="4">
+              <span class="control_indicator"></span>
+              </label>
+              <label class="control control-radio">somewhat agree
+              <input type="radio" name="question-answer" value="5">
+              <span class="control_indicator"></span>
+              </label>
+              <label class="control control-radio">agree
+              <input type="radio" name="question-answer" value="6">
+              <span class="control_indicator"></span>
+              </label>
+              <label class="control control-radio">strongly agree
+              <input type="radio" name="question-answer" value="7">
+              <span class="control_indicator"></span>
+              </label>
             </div>
           </div>
           <div id="tie-breaker-template" class="carousel-cell quiz-question" style="display:none">
             <p>If you were going to learn a song right now, which way would you prefer?</p>
             <div id="tie-breaker" class="answer-section">
-              <input type="radio" name="tie-breaker-answer" value="ear"> I'd love to learn by finding the sounds I hear.
-              <input type="radio" name="tie-breaker-answer" value="eye"> I'd like to learn by following visual queues.
-              <input type="radio" name="tie-breaker-answer" value="create"> I'd like to experiment and make up my own song.
+              <label class="control control-radio">I'd love to learn by finding the sounds I hear.
+              <input type="radio" name="tie-breaker-answer" value="ear"> 
+              <span class="control_indicator"></span>
+              </label>
+              <label class="control control-radio">I'd like to learn by following visual queues.
+              <input type="radio" name="tie-breaker-answer" value="eye"> 
+              <span class="control_indicator"></span>
+              </label>
+              <label class="control control-radio">I'd like to experiment and make up my own song.
+              <input type="radio" name="tie-breaker-answer" value="create"> 
+              <span class="control_indicator"></span>
+              </label>
             </div>
           </div>
           <div class="progress-bar">
@@ -91,7 +123,7 @@
               </div>
               <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
               <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_97e39215ad5ad59c825210614_855559e5b6" tabindex="-1" value=""></div>
-              <div class="clear">
+              <div class="clear yesno">
                 <button id="yes-button" class="email-button">
                   <strong>Yes!</strong> I want to know the secrets to becoming a great musician!
                 </button>

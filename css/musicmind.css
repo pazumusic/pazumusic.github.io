@@ -444,10 +444,10 @@ button:disabled, button:disabled:hover {
 	height: 210px;
 /*	margin: 10px;
 	padding: 30px;
-*/	text-align: left;
-	vertical-align: top;
 	background-color: #225D75;
 	box-shadow: 0 1px 2px rgba(0,0,0,.1);
+*/	text-align: left;
+	vertical-align: top;
 	font-size:18px;
 }
 
@@ -471,7 +471,7 @@ button:disabled, button:disabled:hover {
 	left: 0;
 	width: 25px;
 	height: 25px;
-	background: #225D75;
+	background: none;
 	border:1px solid #D34335;
 }
 
@@ -481,7 +481,7 @@ button:disabled, button:disabled:hover {
 
 .control:hover input ~ .control_indicator,
 .control input:focus ~ .control_indicator {
-	background: #D34335;
+	background: #225D75;
 	transition:.0s;
 }
 
@@ -516,4 +516,53 @@ li.eye {
 
 li.create {
 	background-image: url('../images/mm-creative.png');
+}
+
+/* Responsive Queries */
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (-moz-min-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min-device-pixel-ratio: 1.5)
+
+@media only screen and (max-width: 758px) {
+    .music-mind-container {
+    	width: 90%;
+	    margin: 0 auto;
+	}
+	
+	.music-mind-page h1 {
+		font-size:5.5em;
+	}
+	
+	p {
+		font-size: 1.5rem;
+	}
+	
+	.quiz-question p {
+		font-size: 2.25rem;
+	}
+	
+	h4 {
+    	font-size: 2.3rem;
+	}
+	
+	.music-mind-button, .music-mind-page-button {
+    	font-size: 2.25rem;
+    	padding: 15px 50px;
+	}
+	
+	.flickity-viewport {
+	    height: 460px !important;
+	}
+	
+	.control {
+		display:block;
+	    font-size: 22px;
+	    padding-left: 35px;
+	}
+	
+	.music-mind-body p {
+	    font-size: 17px;
+	}
 }

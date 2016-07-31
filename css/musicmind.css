@@ -10,7 +10,7 @@ body {
   color: #fff;
   background-color: #225D75;
   overflow: auto;
-  background-image: url('../images/Background_Pattern.png');
+  background-image: url('../images/mm-background.png');
 }
 
 p {
@@ -335,9 +335,9 @@ button:disabled, button:disabled:hover {
 
 .results-panel li {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  border: 1px solid #000;
+  width: 144px;
+  height: 144px;
+  border: none;
 }
 
 /* --------------- Animation Styles --------------- */
@@ -507,13 +507,13 @@ button:disabled, button:disabled:hover {
 /* Icons */
 
 li.ear {
-	background-image: url('../images/EAR.png');
+	background-image: url('../images/mm-ear.png');
 }
 
 li.eye {
-	background-image: url('../images/EYE.png');
+	background-image: url('../images/mm-eye.png');
 }
 
 li.create {
-	background-image: url('../images/CREATE.png');
+	background-image: url('../images/mm-creative.png');
 }

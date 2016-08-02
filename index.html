@@ -5,6 +5,7 @@
     <meta property="og:title" content="PAZU | What Type of Music Mind Are You?" />
     <meta property="og:description" content="Want to find out the best way you learn music? Take this short questionnaire to find out more." />
     <meta property="og:image" content="http://www.pazumusic.com/music-mind/img/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
     <script src="https://npmcdn.com/flickity@2.0.2/dist/flickity.pkgd.min.js"></script>
@@ -12,28 +13,29 @@
     <link type="text/css" rel="stylesheet" href="https://npmcdn.com/flickity@2.0.2/dist/flickity.min.css" />
     <link type="text/css" rel="stylesheet" href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" />
     <link type="text/css" rel="stylesheet" href="css/musicmind.css" />
-    <script src="https://use.typekit.net/hec8rxm.js"></script>
-	  <script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script src="https://use.typekit.net/hec8rxm.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
   </head>
   <body>
     <div class="music-mind-container">
       <div class="music-mind-page music-mind-page-1">
-        <h1><span>PAZU</span> <strong> Welcome to Music Mind!</strong></h1>
+        <h1><span class="pazu-title">PAZU</span> <strong> Welcome to Music Mind!</strong></h1>
         <div class="music-mind-body">
           <p>Want to find out the best way you learn music? Take this short questionnaire to find out more. There are 3 main pathways to learning music:</p>
           <ul class="results-panel">
-            <li class="ear">ear</li>
-            <li class="eye">eye</li>
-            <li class="create">create</li>
+            <div class="pathway"><li class="ear"></li><br/><div class="pathway-title pathway-ear">EAR</div></div>
+            <div class="pathway"><li class="eye"></li><br/><div class="pathway-title pathway-eye">EYE</div></div>
+            <div class="pathway"><li class="create"></li><br/><div class="pathway-title pathway-create">CREATE</div></div>
           </ul>
-          <h4>Which one are you strongest in?</h4>
+          <h4 class="which-one">Which one are you strongest in?</h4>
           <button class="music-mind-page-button">
             Take The Test!
           </button>
+          <div class="blue-bar"></div>
         </div>
       </div>
       <div class="music-mind-page music-mind-page-2">
-        <h1><span>Music Mind</span><strong id="question-number">Question #:1</strong> </h1>
+        <h1><span>Music Mind</span></h1><div class="question-number"><strong id="question-number">Question #:1</strong></div> 
         <div class="music-mind-body">
           <div class="main-carousel js-flickity" data-flickity-options='{ "cellAlign": "left", "contain": true, "accessibility": false, "prevNextButtons": false, "pageDots": false }'></div>
           <div id="quiz-question-template" class="carousel-cell quiz-question" style="display:none">
@@ -99,7 +101,7 @@
         </div>
       </div>
       <div class="music-mind-page music-mind-page-3">
-        <h1><span>You're results are being processed</span><strong>Almost Done!</strong></h1>
+        <h1><div class="your-results"><div class="your-results2">Your results are being processed</div></div><strong>Almost Done!</strong></h1>
         <div class="music-mind-body">
           <p>
             While you wait, please enter your email below to receive the top 5 tips to becoming a great musician, exciting updates and much more!
@@ -136,16 +138,22 @@
         </div>
       </div>
       <div class="music-mind-page music-mind-page-4">
-        <h1><span>You're music mind is: </span><strong class="music-mind-result"></strong></h1>
+        <h1><span>Your music mind is: </span><strong class="music-mind-result"></strong></h1>
         <div class="music-mind-body">
+        <div class="results-wrap">
+          <div class="results-end">
           <ul class="results-panel">
             <li>Eye: <span id="eye-result"></span></li>
             <li>Ear: <span id="ear-result"></span></li>
             <li>Create: <span id="create-result"></span></li>
           </ul>
+          </div>
+          <div class="results-end">
           <h4>Your Strengths:</h4>
           <div class="strengths-container">
             <ul id="strengths-list"></ul>
+            </div></div>
+            </div>
             <button class="music-mind-page-button">
               Share Your Results!
             </button>

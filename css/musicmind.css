@@ -11,9 +11,10 @@ body {
   background-color: #225D75;
   overflow: auto;
   background-image: url('../images/mm-background.png');
-  background-size: 1500px auto;
+  background-size: auto 100%;
   font-size:14px;
   letter-spacing:.5px;
+  line-height:1.5em;
 }
 
 p {
@@ -85,13 +86,17 @@ h4.which-one {
 	max-width:95%;
 }
 
+#tie-breaker .control {
+	font-size:14px;
+}
+
 /* Text Styles, Colors, Backgrounds */
 
 .music-mind-page h1 {
     position: relative;
     font-weight: 300 !important;
     font-size: 3em;
-    line-height: 1;
+    line-height: 1.4em;
     letter-spacing: 0.1rem;
     margin: 0;
     padding-top: 75px;
@@ -311,14 +316,26 @@ button:disabled, button:disabled:hover {
   box-shadow: 0 1px 0 rgba(0,0,0,0.1);
 }
 
+.page-1-btm {
+    position: absolute;
+    display: block;
+    width: 100%;
+    bottom: 0;
+    top: 690px;
+}
+
 .blue-bar {
-	background-color: #122832;
-    height: 100px;
+    background-color: #122832;
     margin-top: -31px !important;
     opacity: .5;
     z-index: 0;
     border-top: 2px solid #D34335;
+    position: relative;
+    bottom: 0;
+    height: 100%;
+    min-height:100px;
 }
+
 /*
 @media screen and (max-width: 47.4375em) {
   .music-mind-page h1 {
@@ -640,6 +657,10 @@ li.create {
 		padding-top:30px;
 	}
 	
+	.music-mind-page h1 {
+		font-size:2em;
+	}
+		
 	.music-mind-body {
     	padding-top: 10px;
     }
@@ -689,6 +710,11 @@ li.create {
     	padding: 5px 0 0 0;
 	}
 	
+.music-mind-page-1 > .music-mind-body p {
+    font-size: 1.25em;
+    padding: 25px 0 30px 0;
+}
+	
 	
 	.results-panel li {
    	 	display: inline-block;
@@ -700,8 +726,9 @@ li.create {
 }
 }
 
-/* FONTS */
 
+/* FONTS */
+/*
 @font-face {
     font-family: 'ProximaNovaBlRegular';
     src: url('../fonts/proximanova-black-webfont.eot');
@@ -781,3 +808,4 @@ li.create {
     font-style: normal;
 
 }
+*/

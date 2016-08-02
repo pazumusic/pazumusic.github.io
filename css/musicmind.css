@@ -6,19 +6,23 @@ html, body {
 }
 
 body {
-  font-family: Proxima Nova, Arial, sans-serif;
+  font-family: "proxima-nova", Arial, sans-serif;
   color: #fff;
   background-color: #225D75;
   overflow: auto;
   background-image: url('../images/mm-background.png');
+  background-size: 1500px auto;
+  font-size:14px;
+  letter-spacing:.5px;
 }
 
 p {
-    max-width: 800px;
+    max-width: 95%;
     margin: 0 auto;
-    font-size: 1.5rem;
-    font-weight: 300;
-    padding-bottom: 65px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding-bottom: 35px;
+    line-height: 1.5em;
 }
 
 strong, b {
@@ -43,7 +47,7 @@ strong, b {
 
 .music-mind-body {
     position: relative;
-    padding-top: 5%;
+    padding-top: 35px;
     width: 100%;
 }
 
@@ -56,9 +60,17 @@ h4 {
    font-size:1.3rem;
 }
 
+h4.which-one {
+	padding:30px 0 25px;
+}
+
 .music-mind-page-current, .no-js .music-mind-page {
   visibility: visible;
   z-index: 1;
+}
+
+.music-mind-page-current p { 
+	max-width:70%;
 }
 
 .no-js body {
@@ -67,6 +79,10 @@ h4 {
 
 .music-mind-page-ontop {
   z-index: 999;
+}
+
+#tie-breaker-template p {
+	max-width:95%;
 }
 
 /* Text Styles, Colors, Backgrounds */
@@ -85,20 +101,31 @@ h4 {
 }
 
 .music-mind-page h1 span {
-    font-family: serif;
+    font-family: proxima-nova,sans-serif;
     font-weight: 400;
-    font-size: 40%;
+    font-size: 1.5em;
     text-transform: none;
     word-spacing: 0;
-    letter-spacing: 0;
+    letter-spacing: 1px;
     display: block;
-    opacity: 0.4;
-    padding-bottom: 45px;
+    padding-bottom: 40px;
+}
+
+.music-mind-page h1 span.pazu-title {
+    font-size: .5em;
+    letter-spacing: 15px;
 }
 
 .music-mind-page h1 strong {
   color: #fff;
-  
+}
+
+.question-number {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    border-bottom: 1px solid #D34335;
+    padding-bottom: 50px;
 }
 
 /*** DISABLED BG COLORS ***
@@ -232,7 +259,7 @@ h3.music-mind-result {
     position: relative;
     font-size: 16px;
     color: #D34335;
-    font-family: proxima nova, arial,sans-serif;
+    font-family: "proxima-nova", arial,sans-serif;
     text-transform: uppercase;
     border: none;
     background-color: rgba(9,9,9,0);
@@ -271,6 +298,7 @@ button:disabled, button:disabled:hover {
     user-select: none;
     border-radius: 50px;
 	transition:.08s;
+	z-index:1;
 }
 
 .music-mind-button:hover, .music-mind-page-button:hover {
@@ -283,11 +311,20 @@ button:disabled, button:disabled:hover {
   box-shadow: 0 1px 0 rgba(0,0,0,0.1);
 }
 
+.blue-bar {
+	background-color: #122832;
+    height: 100px;
+    margin-top: -31px !important;
+    opacity: .5;
+    z-index: 0;
+    border-top: 2px solid #D34335;
+}
+/*
 @media screen and (max-width: 47.4375em) {
   .music-mind-page h1 {
     font-size: 3em;
   }
-
+*/
   .quiz-question p {
     font-size: 1em;
   }
@@ -301,14 +338,20 @@ button:disabled, button:disabled:hover {
   text-align: center;
 }
 
+#quiz-question-template {
+	width:100%;
+	margin:0 auto;
+}
+
 #question-number {
     color: #D34335;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 
 .quiz-question p {
-  font-size: 2em;
+  font-size: 2.5em;
   letter-spacing:1px;
+  padding-top:10px;
 }
 
 .progress-bar {
@@ -334,10 +377,68 @@ button:disabled, button:disabled:hover {
 }
 
 .results-panel li {
-  display: inline-block;
-  width: 144px;
-  height: 144px;
-  border: none;
+    display: inline-block;
+	width: 144px;
+    height: 144px;
+    border: none;
+    margin: 0 65px;
+}
+
+.pathway {
+	display:inline-block;
+}
+
+.music-mind-page-4 .results-panel li {
+	margin:0;
+}
+
+.music-mind-page-4 h4 {
+    text-align: left;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.pathway-title {
+    padding-top: 24px;
+    font-size: 1.5em;
+}
+
+.pathway-ear {
+	color:#E6B257;
+}
+
+.pathway-eye {
+	color:#318DBF;
+}
+
+.pathway-create {
+	color:#D34335;
+}
+
+.your-results {
+    background-color: #21566d;
+    z-index: 0;
+    padding: 25px 0;
+    font-size: .5em;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+}
+
+.your-results2 {
+	z-index:2;
+}
+
+.results-end {
+    display: inline-block;
+}
+
+.results-wrap {
+    display: block;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* --------------- Animation Styles --------------- */
@@ -439,16 +540,16 @@ button:disabled, button:disabled:hover {
 /* Radio Button Styles */
 
 .answer-section {
-	display: inline-block;
-	width: ;
-	height: 210px;
-/*	margin: 10px;
-	padding: 30px;
-	background-color: #225D75;
-	box-shadow: 0 1px 2px rgba(0,0,0,.1);
-*/	text-align: left;
-	vertical-align: top;
-	font-size:18px;
+    /* display: inline-block; */
+    width: 970px;
+    height: 100px;
+    margin: 0 auto;
+    text-align: left;
+    vertical-align: top;
+    font-size: 18px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .control {
@@ -457,6 +558,7 @@ button:disabled, button:disabled:hover {
 	margin-bottom: 15px;
 	padding-left: 30px;
 	cursor: pointer;
+	font-weight:100;
 }
 
 .control input {
@@ -529,13 +631,18 @@ li.create {
 
 @media only screen and (max-width: 950px) {
     .music-mind-container {
-    	width: 90%;
+    	width: 100%;
 	    margin: 0 auto;
 	}
 	
 	.music-mind-page h1 {
-		font-size:5.5em;
+		font-size:1em;
+		padding-top:30px;
 	}
+	
+	.music-mind-body {
+    	padding-top: 10px;
+    }
 	
 	p {
 		font-size: 1.5rem;
@@ -545,26 +652,132 @@ li.create {
 		font-size: 2.25rem;
 	}
 	
+	.question-number {
+    	padding-bottom: 15px;
+	}
+	
+	#question-number {
+	    font-size: 1.25rem;
+	}
+	
 	h4 {
-    	font-size: 2.3rem;
+    	font-size: 1.3rem;
 	}
 	
 	.music-mind-button, .music-mind-page-button {
-    	font-size: 2.25rem;
-    	padding: 15px 50px;
+    	font-size: 1.25rem;
 	}
 	
 	.flickity-viewport {
-	    height: 460px !important;
+	    height: 410px !important;
 	}
 	
 	.control {
 		display:block;
-	    font-size: 22px;
+	    font-size: 21px;
 	    padding-left: 35px;
 	}
 	
+	.answer-section {
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+	
 	.music-mind-body p {
-	    font-size: 17px;
+    	font-size: 1.75em;
+    	padding: 5px 0 0 0;
 	}
+	
+	
+	.results-panel li {
+   	 	display: inline-block;
+    	width: 80px;
+    	height: 75px;
+    	border: none;
+    	margin: 0 2px;
+    	background-size: 80px;
+}
+}
+
+/* FONTS */
+
+@font-face {
+    font-family: 'ProximaNovaBlRegular';
+    src: url('../fonts/proximanova-black-webfont.eot');
+    src: url('../fonts/proximanova-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-black-webfont.woff') format('woff'),
+         url('../fonts/proximanova-black-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-black-webfont.svg#ProximaNovaBlRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.typekit-badge {
+	display:none !important;
+}
+
+
+@font-face {
+    font-family: 'ProximaNovaRgBold';
+    src: url('../fonts/proximanova-bold-webfont.eot');
+    src: url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-bold-webfont.svg#ProximaNovaRgBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ProximaNovaRgBoldItalic';
+    src: url('../fonts/proximanova-boldit-webfont.eot');
+    src: url('../fonts/proximanova-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-boldit-webfont.woff') format('woff'),
+         url('../fonts/proximanova-boldit-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-boldit-webfont.svg#ProximaNovaRgBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ProximaNovaXBold';
+    src: url('../fonts/proximanova-extrabold-webfont.eot');
+    src: url('../fonts/proximanova-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-extrabold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-extrabold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-extrabold-webfont.svg#ProximaNovaThBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ProximaNovaSemiBold';
+    src: url('../fonts/proximanova-semibold-webfont.eot');
+    src: url('../fonts/proximanova-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-semibold-webfont.woff') format('woff'),
+         url('../fonts/proximanova-semibold-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-semibold-webfont.svg#ProximaNovaLtBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'Proxima-Nova';
+    src: url('../fonts/proximanova-regular-webfont.eot');
+    src: url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+         url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-regular-webfont.svg#ProximaNovaRgRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }

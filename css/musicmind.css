@@ -8,13 +8,13 @@ html, body {
 body {
   font-family: "proxima-nova", Arial, sans-serif;
   color: #fff;
-  background-color: #225D75;
+  background-color: #0C7796;
   overflow: auto;
   background-image: url('../images/mm-background.png');
   background-size: auto 100%;
   font-size:14px;
   letter-spacing:.5px;
-  line-height:1.5em;
+  line-height:1.3em;
 }
 
 p {
@@ -23,7 +23,7 @@ p {
     font-size: 1.4rem;
     font-weight: 100;
     padding-bottom: 35px;
-    line-height: 1.5em;
+    line-height: 1.3em;
 }
 
 strong, b {
@@ -63,6 +63,7 @@ h4 {
 
 h4.which-one {
 	padding:30px 0 25px;
+	font-weight:300;
 }
 
 .music-mind-page-current, .no-js .music-mind-page {
@@ -87,7 +88,11 @@ h4.which-one {
 }
 
 #tie-breaker .control {
-	font-size:14px;
+	font-size:15px;
+}
+
+.flickity-viewport {
+	height:300px !important;
 }
 
 /* Text Styles, Colors, Backgrounds */
@@ -96,10 +101,10 @@ h4.which-one {
     position: relative;
     font-weight: 300 !important;
     font-size: 3em;
-    line-height: 1.4em;
+    line-height: 1.3em;
     letter-spacing: 0.1rem;
     margin: 0;
-    padding-top: 75px;
+    padding-top: 60px;
     width: 100%;
     text-align: center;
     text-transform: uppercase;
@@ -108,12 +113,12 @@ h4.which-one {
 .music-mind-page h1 span {
     font-family: proxima-nova,sans-serif;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.25em;
     text-transform: none;
     word-spacing: 0;
     letter-spacing: 1px;
     display: block;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
 }
 
 .music-mind-page h1 span.pazu-title {
@@ -129,7 +134,7 @@ h4.which-one {
     text-align: center;
     width: 65%;
     margin: 0 auto;
-    border-bottom: 1px solid #D34335;
+    border-bottom: 1px solid #EE5F44;
     padding-bottom: 50px;
 }
 
@@ -183,22 +188,24 @@ h4.which-one {
 }
 
 .email-form {
-  width: 450px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: #fff;
-  padding: 10px;
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .email-form input {
     height: 35px;
     width: 100%;
-    border: 1px solid #aaa;
+    border: 1px solid #bbb;
     border-radius: 5px;
     font-size: 1.1rem;
-    padding: 0 7px;
+    padding: 15px 7px;
+    margin: 5px 0;
 }
 
 .email-form label {
@@ -216,18 +223,22 @@ h4.which-one {
 }
 
 .email-button {
-    width: 196px;
-    padding: 10;
+    width: 100%;
+    margin: 15px 0;
     background-color: #efefef;
     border: none;
     cursor: pointer;
     border-radius: 7px;
-    height:115px;
+    height: 80;
+    font-family: proxima-nova,sans-serif;
+    text-align: center;
+	transition:.1s;
 }
 
 .email-button:hover {
-	background-color:#434343;
+	background-color:#FF5343;
 	color:#efefef;
+	transition:.1s;
 }
 
 .email-button strong {
@@ -263,7 +274,7 @@ h3.music-mind-result {
     margin-left: 14px;
     position: relative;
     font-size: 16px;
-    color: #D34335;
+    color: #EE5F44;
     font-family: "proxima-nova", arial,sans-serif;
     text-transform: uppercase;
     border: none;
@@ -307,7 +318,7 @@ button:disabled, button:disabled:hover {
 }
 
 .music-mind-button:hover, .music-mind-page-button:hover {
-    background: #333;
+    background: #EE5F44;
     color: #fff;
     transition:.1s;
 }
@@ -329,7 +340,7 @@ button:disabled, button:disabled:hover {
     margin-top: -31px !important;
     opacity: .5;
     z-index: 0;
-    border-top: 2px solid #D34335;
+    border-top: 2px solid #EE5F44;
     position: relative;
     bottom: 0;
     height: 100%;
@@ -345,45 +356,51 @@ button:disabled, button:disabled:hover {
   .quiz-question p {
     font-size: 1em;
   }
-}
+
 
 /* --------------- Quiz Styles ---------------  */
 
 .quiz-question {
-  width: 100%;
+  width: 100% !important;;
   height: 200px;
   text-align: center;
 }
 
 #quiz-question-template {
-	width:100%;
+	width:100% !important;
 	margin:0 auto;
 }
 
 #question-number {
-    color: #D34335;
+    color: #EE5F44;
     font-size: 1.7rem;
 }
 
 .quiz-question p {
   font-size: 2.5em;
   letter-spacing:1px;
-  padding-top:10px;
+  padding-top:50px;
+}
+
+#tie-breaker-template.quiz-question p {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .progress-bar {
     height: 25px;
     width: 65%;
     margin: auto;
-    border: 1px solid #D34335;
+    border: 1px solid #EE5F44;
     max-width: 650px;
     border-radius: 25px;
+    margin-top:75px;
 }
 
 .progress-bar-fill {
     height: 25px;
     width: 0;
-    background: #D34335;
+    background: #EE5F44;
     border-radius: 25px 0 0 25px;
 }
 
@@ -422,15 +439,15 @@ button:disabled, button:disabled:hover {
 }
 
 .pathway-ear {
-	color:#E6B257;
+	color:#F4C46B;
 }
 
 .pathway-eye {
-	color:#318DBF;
+	color:#25AAE1;
 }
 
 .pathway-create {
-	color:#D34335;
+	color:#EE5F44;
 }
 
 .your-results {
@@ -558,7 +575,7 @@ button:disabled, button:disabled:hover {
 
 .answer-section {
     /* display: inline-block; */
-    width: 970px;
+    width: 486px;
     height: 100px;
     margin: 0 auto;
     text-align: left;
@@ -570,7 +587,7 @@ button:disabled, button:disabled:hover {
 }
 
 .control {
-	font-size: 18px;
+	font-size: 15px;
 	position: relative;
 	margin-bottom: 15px;
 	padding-left: 30px;
@@ -587,11 +604,34 @@ button:disabled, button:disabled:hover {
 .control_indicator {
 	position: absolute;
 	top: 0px;
-	left: 0;
 	width: 25px;
 	height: 25px;
 	background: none;
-	border:1px solid #D34335;
+	border:1px solid #EE5F44;
+}
+
+.control_indicator.control-one, .control_indicator.control-seven {
+	left:-10px;
+}
+
+.control_indicator.control-two {
+	left:-12px;
+}
+	
+.control_indicator.control-six {
+	left:0;
+}
+
+.control_indicator.control-five {
+	left:0;
+}
+
+.control_indicator.control-three {
+	left:-4px;
+}
+
+.control_indicator.control-four {
+	left:0;
 }
 
 .control-radio .control_indicator {
@@ -604,13 +644,20 @@ button:disabled, button:disabled:hover {
 	transition:.0s;
 }
 
+.control:hover input ~ .control_indicator.ci-eye,
+.control input:focus ~ .control_indicator.ci-eye,
+.control:hover input ~ .control_indicator.ci-ear,
+.control input:focus ~ .control_indicator.ci-ear,
+.control:hover input ~ .control_indicator.ci-create,
+.control input:focus ~ .control_indicator.ci-create, {
+	background: #225D75;
+	opacity:.5;
+	}
+
 /* Checked state */
 .control input:checked ~ .control_indicator {
-	background: #fff;
+	background: #EE5F44;
 	transition:.0s;
-	width:15px;
-	height:15px;
-	border:6px solid #D34335;
 }
  
 /* Radio button inner circle */
@@ -621,6 +668,120 @@ button:disabled, button:disabled:hover {
 	height: 6px;
 	border-radius: 50%;
 	background: #fff;
+}
+
+/* New radio buttons */
+
+.answer-one, .answer-two, .answer-three, .answer-four, .answer-five, .answer-six, .answer-seven {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+.answer-four {
+	width: 25px;
+	padding:0 10px;
+}
+
+.answer-three, .answer-five {
+	width: 33.33333334px;
+	padding:0 10px;
+}
+
+.answer-two, .answer-six {
+	width: 41.66666667px;
+	padding:0 10px;
+}
+
+.answer-one, .answer-seven {
+	width:70px;
+	padding: 0 10px;
+}
+
+.radio-caption {
+	display:block;
+	text-align:center;
+	margin-top:40px;
+}
+
+.radio-caption-two, .radio-caption-three, .radio-caption-five, .radio-caption-six {
+	display:none;
+}
+
+.radio-caption-four {
+	margin-left:-8px;
+}
+
+.control-one, .control-seven {
+	width: 50px;
+	height: 50px;
+}
+
+.control-two, .control-six {
+	width: 41.66666667px;
+	height:41.66666667px;
+	margin-top: 4.16666667px;
+}
+
+.control-three, .control-five {
+	width: 33.33333334px;
+	height: 33.33333334px;
+	margin-top:8.33333334px;
+}
+
+.control-four {
+	margin-top: 12.5px;
+}
+
+/* Q10 Radio Buttons */
+
+.tb-answer-one, .tb-answer-two, .tb-answer-three {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 0 5px;
+    margin: 0 auto;
+    width:150px;
+}
+
+.radio-caption-tb-one, .radio-caption-tb-two, .radio-caption-tb-three {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin: 0;
+    padding-top: 75px;
+}
+
+.answer-section.tie-breaker {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.control_indicator.ci-eye, .control_indicator.ci-ear, .control_indicator.ci-create {
+    position: absolute;
+    top: 0px;
+    width: 75px;
+    height: 75px;
+    background-size: 75px 75px;
+    border:none;
+    left:-25px;
+}
+
+.control_indicator.ci-eye {
+    background-image: url('../images/mm-eye.png');
+}
+
+.control_indicator.ci-ear {
+    background-image: url('../images/mm-ear.png');
+}
+
+.control_indicator.ci-create {
+    background-image: url('../images/mm-creative.png');
 }
 
 /* Icons */
@@ -637,6 +798,29 @@ li.create {
 	background-image: url('../images/mm-creative.png');
 }
 
+
+/* Results */
+
+.results-bar {
+    background-color: #000;
+    padding: 15px 0 30px;
+}
+
+.music-mind-page-4 h1, .music-mind-page-4 h1 span {
+	display:inline-block;
+}
+
+.your-results .music-mind-page h1 {
+    font-size: 3.5em;
+    line-height: 0.3em;
+    padding: 40px 0;
+}
+
+/* Final CTA */
+#final-cta .email-form {
+	background-color:transparent;
+}
+
 /* Responsive Queries */
 
 /*
@@ -647,6 +831,11 @@ li.create {
 */
 
 @media only screen and (max-width: 950px) {
+
+	.music-mind-page-current p {
+    	max-width: 90%;
+	}
+	
     .music-mind-container {
     	width: 100%;
 	    margin: 0 auto;
@@ -663,6 +852,8 @@ li.create {
 		
 	.music-mind-body {
     	padding-top: 10px;
+    	max-width:95%;
+    	margin:0 auto;
     }
 	
 	p {
@@ -678,24 +869,25 @@ li.create {
 	}
 	
 	#question-number {
-	    font-size: 1.25rem;
+	    font-size: 1rem;
 	}
 	
 	h4 {
-    	font-size: 1.3rem;
+    	font-size: 1rem;
 	}
 	
 	.music-mind-button, .music-mind-page-button {
-    	font-size: 1.25rem;
+        font-size: 1em;
+ 	   padding: 0 20px;
 	}
 	
 	.flickity-viewport {
-	    height: 410px !important;
+	    height: 375px !important;
 	}
 	
 	.control {
 		display:block;
-	    font-size: 21px;
+	    font-size: 19px;
 	    padding-left: 35px;
 	}
 	
@@ -703,18 +895,17 @@ li.create {
     width: 230px;
     margin-left: auto;
     margin-right: auto;
-}
+	}
 	
 	.music-mind-body p {
-    	font-size: 1.75em;
+    	font-size: 1.5em;
     	padding: 5px 0 0 0;
 	}
 	
-.music-mind-page-1 > .music-mind-body p {
-    font-size: 1.25em;
-    padding: 25px 0 30px 0;
-}
-	
+	.music-mind-page-1 > .music-mind-body p {
+    font-size: 1em;
+    padding: 20px 0 30px 0;
+	}
 	
 	.results-panel li {
    	 	display: inline-block;
@@ -723,8 +914,106 @@ li.create {
     	border: none;
     	margin: 0 2px;
     	background-size: 80px;
+    }
+    
+    .radio-caption-tb-one, .radio-caption-tb-two, .radio-caption-tb-three {
+    	padding-top:10px;
+    }
+    
+    .tb-answer-one, .tb-answer-two, .tb-answer-three {
+    	display: block;
+    	text-align: left;
+    }
+    
+    .music-mind-page h1 span {
+    	padding-bottom:0;
+    	font-size:.75em;
+    }
+    
+    .page-1-btm {
+    	top: 510px;
+	}
+	
+	.pathway-title {
+    padding-top: 16px;
+    font-size: 1.25em;
+	}
+	
+	.control-one, .control-two, .control-three, .control-four, .control-five, .control-six, .control-seven {
+		width: 25px;
+		height: 25px;
+		margin-top: 0;
+	}
+	
+	.answer-one, .answer-two, .answer-three, .answer-four, .answer-five, .answer-six, .answer-seven {
+		display:block;
+		width:100%;
+		text-align: left;
+	}
+	
+	.radio-caption {
+		margin:0;
+		text-align: left;
+	}
+	
+	.radio-caption-two, .radio-caption-three, .radio-caption-five, .radio-caption-six {
+		display:block;
+	}
+	
+	.radio-caption-one, .radio-caption-two, .radio-caption-three, .radio-caption-four, .radio-caption-five, .radio-caption-six, .radio-caption-seven {
+		padding-top:5px;
+	}
+	
+	.control_indicator.control-one, .control_indicator.control-seven {
+		left:0;
+	}
+
+	.control_indicator.control-two {
+		left:0;
+	}
+	
+	.control_indicator.control-six {
+		left:0;
+	}
+
+	.control_indicator.control-five {
+		left:0;
+	}
+
+	.control_indicator.control-three {
+		left:0;
+	}
+
+	.control_indicator.control-four {
+		left:0;
+	}
+	
+	.progress-bar {
+		margin-top:0;
+	}
+	
+	.button-container {
+		padding: 5px 0;
+	}
+	
+	.tb-answer-one, .tb-answer-two, .tb-answer-three {
+		margin: 0 35px;
+		width:80%;
+	}
+	
+	.radio-caption-tb-one, .radio-caption-tb-two, .radio-caption-tb-three {
+		font-size: 14px;
+		padding-left: 25px;
+	}
+	
+	.answer-section.tie-breaker {
+		padding-top:0;
+		max-width:100%
+	}
+
 }
-}
+
+
 
 
 /* FONTS */

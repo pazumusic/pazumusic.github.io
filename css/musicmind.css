@@ -225,7 +225,6 @@ h4.which-one {
 
 .email-button {
     width: 100%;
-    margin: 15px 0;
     background-color: #FF5343;
     border: none;
     cursor: pointer;
@@ -237,8 +236,13 @@ h4.which-one {
 	color:#fff;
 }
 
+#yes-button.email-button {
+    margin-bottom: 15px;
+}
+
 #no-button.email-button {
 	background-color:#f47064;
+	margin-bottom:0;
 }
 
 .email-button:hover, #no-button.email-button:hover {

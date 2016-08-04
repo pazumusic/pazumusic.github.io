@@ -225,20 +225,26 @@ h4.which-one {
 .email-button {
     width: 100%;
     margin: 15px 0;
-    background-color: #efefef;
+    background-color: #FF5343;
     border: none;
     cursor: pointer;
     border-radius: 7px;
     height: 80;
     font-family: proxima-nova,sans-serif;
     text-align: center;
-	transition:.1s;
+	transition:.125s;
+	color:#fff;
+}
+
+#no-button.email-button {
+	background-color:#f47064;
 }
 
 .email-button:hover {
-	background-color:#FF5343;
+	background-color:#333;
 	color:#efefef;
-	transition:.1s;
+	transition:.125s;
+	border-radius:50px;
 }
 
 .email-button strong {

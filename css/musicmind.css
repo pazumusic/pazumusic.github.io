@@ -240,7 +240,7 @@ h4.which-one {
 	background-color:#f47064;
 }
 
-.email-button:hover {
+.email-button:hover, #no-button.email-button:hover {
 	background-color:#333;
 	color:#efefef;
 	transition:.125s;

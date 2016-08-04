@@ -305,6 +305,7 @@ button:disabled, button:disabled:hover {
 .music-mind-button, .music-mind-page-button {
     position: relative;
     border: none;
+    font-family: "proxima-nova", arial,sans-serif;
     font-size: 17px;
     font-weight: 600;
     text-transform: uppercase;

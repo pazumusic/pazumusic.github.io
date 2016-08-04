@@ -43,51 +43,82 @@
           <div id="quiz-question-template" class="carousel-cell quiz-question" style="display:none">
             <p></p>
             <div class="answer-section">
-              <label class="control control-radio">strongly disagree
-              <input type="radio" name="question-answer" value="1">
-              <span class="control_indicator"></span>
-              </label>
-              <label class="control control-radio">disagree
-              <input type="radio" name="question-answer" value="2">
-              <span class="control_indicator"></span>
-              </label>
-              <label class="control control-radio">somewhat disagree
-              <input type="radio" name="question-answer" value="3">
-              <span class="control_indicator"></span>
-              </label>
-              <label class="control control-radio">unsure
-              <input type="radio" name="question-answer" value="4">
-              <span class="control_indicator"></span>
-              </label>
-              <label class="control control-radio">somewhat agree
-              <input type="radio" name="question-answer" value="5">
-              <span class="control_indicator"></span>
-              </label>
-              <label class="control control-radio">agree
-              <input type="radio" name="question-answer" value="6">
-              <span class="control_indicator"></span>
-              </label>
-              <label class="control control-radio">strongly agree
-              <input type="radio" name="question-answer" value="7">
-              <span class="control_indicator"></span>
-              </label>
+              <div class="answer-one">
+              	<label class="control control-radio">
+              	<input type="radio" name="question-answer" value="1">
+              	<span class="control_indicator control-one"></span>
+              	<span class="radio-caption radio-caption-one">strongly disagree</span>
+              	</label>
+              </div>
+              <div class="answer-two">
+              	<label class="control control-radio">
+              	<input type="radio" name="question-answer" value="2">
+              	<span class="control_indicator control-two"></span>
+              	<span class="radio-caption radio-caption-two">disagree</span>
+
+              	</label>
+              </div>
+              <div class="answer-three">
+              	<label class="control control-radio">
+              	<input type="radio" name="question-answer" value="3">
+              	<span class="control_indicator control-three"></span>
+              	<span class="radio-caption radio-caption-three">somewhat disagree</span>
+              	</label>
+              </div>
+              <div class="answer-four">
+              	<label class="control control-radio">
+              	<input type="radio" name="question-answer" value="4">
+              	<span class="control_indicator control-four"></span>
+              	<span class="radio-caption radio-caption-four">unsure</span>
+              	</label>
+              </div>
+              <div class="answer-five">
+              	<label class="control control-radio">
+              	<input type="radio" name="question-answer" value="5">
+              	<span class="control_indicator control-five"></span>
+              	<span class="radio-caption radio-caption-five">somewhat agree</span>
+              	</label>
+              </div>
+              <div class="answer-six">
+              	<label class="control control-radio">
+              	<input type="radio" name="question-answer" value="6">
+              	<span class="control_indicator control-six"></span>
+              	<span class="radio-caption radio-caption-six">agree</span>
+              	</label>
+              </div>
+              <div class="answer-seven">
+              	<label class="control control-radio">
+              	<input type="radio" name="question-answer" value="7">
+              	<span class="control_indicator control-seven"></span>
+              	<span class="radio-caption radio-caption-seven">strongly agree</span>
+              	</label>
+              </div>
             </div>
           </div>
           <div id="tie-breaker-template" class="carousel-cell quiz-question" style="display:none">
             <p>If you were going to learn a song right now, which way would you prefer?</p>
             <div id="tie-breaker" class="answer-section">
-              <label class="control control-radio">I'd love to learn by finding the sounds I hear.
-              <input type="radio" name="tie-breaker-answer" value="ear">
-              <span class="control_indicator"></span>
-              </label>
-              <label class="control control-radio">I'd like to learn by following visual queues.
-              <input type="radio" name="tie-breaker-answer" value="eye">
-              <span class="control_indicator"></span>
-              </label>
-              <label class="control control-radio">I'd like to experiment and make up my own song.
-              <input type="radio" name="tie-breaker-answer" value="create">
-              <span class="control_indicator"></span>
-              </label>
+              <div class="tb-answer-one">
+              	<label class="control control-radio">
+              	<input type="radio" name="tie-breaker-answer" value="ear">
+              	<span class="control_indicator ci-ear"></span>
+              	<span class="radio-caption radio-caption-tb-one">I'd love to learn by finding the sounds I hear.</span>
+              	</label>
+              </div>
+              <div class="tb-answer-two">
+              	<label class="control control-radio">
+              	<input type="radio" name="tie-breaker-answer" value="eye">
+              	<span class="control_indicator ci-eye"></span>
+              	<span class="radio-caption radio-caption-tb-two">I'd like to learn by following visual queues.</span>
+              	</label>
+              </div>
+              <div class="tb-answer-three">
+              	<label class="control control-radio">
+              	<input type="radio" name="tie-breaker-answer" value="create">
+              	<span class="control_indicator ci-create"></span>
+              	<span class="radio-caption radio-caption-tb-three">I'd like to experiment and make up my own song.</span>
+              	</label>
+              </div>
             </div>
           </div>
           <div class="progress-bar">
@@ -140,7 +171,9 @@
         </div>
       </div>
       <div class="music-mind-page music-mind-page-4">
-        <h1><span>Your music mind is: </span><strong class="music-mind-result"></strong></h1>
+      	<div class="results-bar">
+        	<h1><span>Your music mind is: </span>&nbsp;<strong class="music-mind-result"></strong></h1>
+        </div>
         <div class="music-mind-body">
           <div class="results-wrap">
             <div class="results-end">
@@ -163,7 +196,9 @@
         </div>
       </div>
       <div class="music-mind-page music-mind-page-5">
+      <div class="your-results"><div class="your-results2">
         <h1><span>Share Your Result</span> With Your Friends!</h1>
+      </div></div>
         <div class="music-mind-body">
           <h3 class="music-mind-result"></h3>
           <div class="music-mind-result"></div>

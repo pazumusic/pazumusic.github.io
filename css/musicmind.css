@@ -196,6 +196,7 @@ h4.which-one {
     background-color: #fff;
     padding: 10px;
     border-radius: 15px;
+    max-width:90%;
 }
 
 .email-form input {

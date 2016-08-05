@@ -259,6 +259,7 @@ $(() => {
     for (var key in results.breakdown)
       $(`#${key}-result`).text(results.breakdown[key]);
 
+    $(".results-bar").addClass(`results-${results.mindType}`);
     $(".music-mind-result").text(results.mindType);
     strengths[results.mindType].forEach((item) => $("#strengths-list").append(`<li>${item}</li>`));
   }

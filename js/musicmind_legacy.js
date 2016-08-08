@@ -118,6 +118,7 @@ $(function () {
       if (endNextPage) onEndAnimation($currPage, $nextPage, onAnimationEndCallback);
     });
 
+    $nextPage.show();
     $nextPage.addClass(inClass).on(animEndEventName, function () {
       $nextPage.off(animEndEventName);
       endNextPage = true;
@@ -142,6 +143,7 @@ $(function () {
 
   function resetPage($outpage, $inpage) {
     $outpage.attr("class", $outpage.data(ORG_CLASS_LIST_DATA_KEY));
+    $outpage.hide();
     $inpage.attr("class", $inpage.data(ORG_CLASS_LIST_DATA_KEY) + " music-mind-page-current");
   }
 

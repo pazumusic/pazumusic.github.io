@@ -240,6 +240,8 @@ $(function () {
     }
 
     $(".results-bar").addClass("results-" + results.mindType);
+    $(".results-icon").addClass("white-" + results.mindType);
+    $(".music-mind-result-icon").addClass("icon-" + results.mindType);
     $(".music-mind-result").text(results.mindType);
     strengths[results.mindType].forEach(function (item) {
       return $("#strengths-list").append("<li>" + item + "</li>");

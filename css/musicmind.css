@@ -466,7 +466,7 @@ button:disabled, button:disabled:hover {
     background-color: #21566d;
     z-index: 0;
     padding: 25px 0;
-    font-size: .5em;
+    font-size: 1em;
     font-weight: 400;
     letter-spacing: 3px;
     margin-bottom: 50px;
@@ -476,15 +476,20 @@ button:disabled, button:disabled:hover {
 	z-index:2;
 }
 
-.results-end {
+
+.results-end, .results-end-1, .results-end-2 {
     display: inline-block;
 }
 
+.results-end-1 {margin:0 0 0 auto;}
+
+.results-end-2 {margin: 0 auto 0 0;}
+
+
 .results-wrap {
-    display: block;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    min-height: 275px;
+    margin: 40px auto 0;
 }
 
 /* --------------- Animation Styles --------------- */
@@ -817,6 +822,10 @@ li.create {
     padding: 15px 0 30px;
 }
 
+.results-bar h1 {
+	padding-top:0;
+}
+
 .results-ear {
 	background-color:#F4C46B;
 }
@@ -837,6 +846,61 @@ li.create {
     font-size: 3.5em;
     line-height: 0.3em;
     padding: 40px 0;
+}
+
+.white-ear {
+	background-image: url('../images/mm-ear-white.png');
+	width: 108px;
+    height: 108px;
+    margin: 0 auto;
+}
+
+.white-eye {
+	background-image: url('../images/mm-eye-white.png');
+    width: 108px;
+    height: 108px;
+    margin: 0 auto;
+}
+
+.white-create {
+	background-image: url('../images/mm-create-white.png');
+    width: 108px;
+    height: 108px;
+    margin: 0 auto;
+}
+
+.icon-ear {
+	background-image: url('../images/mm-ear.png');
+	width: 144px;
+    height: 144px;
+    margin: 0 auto;
+}
+
+.icon-eye {
+	background-image: url('../images/mm-eye.png');
+    width: 144px;
+    height: 144px;
+    margin: 0 auto;
+}
+
+.icon-create {
+	background-image: url('../images/mm-create.png');
+    width: 144px;
+    height: 144px;
+    margin: 0 auto;
+}
+
+.music-mind-page-5 h3.music-mind-result {
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-size:1.5em;
+}
+
+.music-mind-page-5 h3 {
+    text-transform: uppercase;
+    font-size:1.5em;
+    letter-spacing:1.25px;
+    margin-bottom:40px;
 }
 
 /* Final CTA */
@@ -866,7 +930,6 @@ li.create {
 
 	.music-mind-page h1 {
 		font-size:1em;
-		padding-top:30px;
 	}
 
 	.music-mind-page h1 {
@@ -1032,6 +1095,15 @@ li.create {
 	.answer-section.tie-breaker {
 		padding-top:0;
 		max-width:100%
+	}
+	
+	.results-wrap {
+		width:100%;
+		display:block;
+	}
+	
+	.results-end-1, .results-end-2 {
+    	display: block;
 	}
 
 }

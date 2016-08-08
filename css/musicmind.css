@@ -905,7 +905,7 @@ li.create {
 
 #atstbx {
     text-align: center;
-    margin: 30px;
+    margin: 2px 25px 30px;
 }
 
 /* Final CTA */
@@ -989,7 +989,7 @@ li.create {
 	}
 
 	.music-mind-body p {
-    	font-size: 1.5em;
+    	font-size: 1.25em;
     	padding: 5px 0 0 0;
 	}
 
@@ -1136,7 +1136,7 @@ li.create {
 	}
 
 	.music-mind-page-5 h3 {
-		margin-bottom:0;
+		margin-bottom:15px;
 	}
 
 }

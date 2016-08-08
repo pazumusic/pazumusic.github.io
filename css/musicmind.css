@@ -1088,13 +1088,31 @@ li.create {
 	}
 
 	.tb-answer-one, .tb-answer-two, .tb-answer-three {
-		margin: 0 35px;
-		width:80%;
+    	margin: 0 35px;
+    	width: 80%;
+    	min-height: 60px;
 	}
 
 	.radio-caption-tb-one, .radio-caption-tb-two, .radio-caption-tb-three {
 		font-size: 14px;
 		padding-left: 25px;
+	}
+	
+	.music-mind-page-4 h4 {
+    	text-align: center;
+    }
+    
+    .strengths-container {
+	    width: 80%;
+	}
+	
+	.music-mind-page .results-bar h1 strong {
+		display:block;
+	}
+	
+	.music-mind-page-5 h3 {
+	    font-size: 1.25em;
+    	line-height: 1.3em;
 	}
 
 	.answer-section.tie-breaker {
@@ -1109,6 +1127,16 @@ li.create {
 	
 	.results-end-1, .results-end-2 {
     	display: block;
+	}
+	
+	.icon-create, .icon-eye, .icon-ear {
+	    width: 75px;
+	    height: 75px;
+    	background-size: 75px 75px;
+	}
+
+	.music-mind-page-5 h3 {
+		margin-bottom:0;
 	}
 
 }

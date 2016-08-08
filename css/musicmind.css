@@ -903,6 +903,11 @@ li.create {
     margin-bottom:40px;
 }
 
+#atstbx {
+    text-align: center;
+    margin: 30px;
+}
+
 /* Final CTA */
 #final-cta .email-form {
 	background-color:transparent;

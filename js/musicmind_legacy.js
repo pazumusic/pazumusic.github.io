@@ -229,7 +229,7 @@ $(function () {
     });
 
     var order = [];
-    foreach (var key in results) {
+    for (var key in results) {
       order.push([key, results[key]]);
     }
 

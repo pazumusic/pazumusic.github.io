@@ -254,14 +254,15 @@ $(function () {
     // NOTE: These results are ordered from smallest to largest
     for (var key in results.breakdown) {
       $("#" + key + "-result").text(results.breakdown[key]);
-      // NOTE: This will apply the CSS class by order
-      var cssClass = cssClasses.shift();
-      $("#" + key + "-result").addClass(cssClass);
+      // NOTE: This will apply the CSS class by order. Uncomment when ready.
+      // var cssClass = cssClasses.shift();
+      // $("#" + key + "-result").addClass(cssClass);
 
       // NOTE: If you have a set of small-to-large CSS classes based
       // on mind type (ie. eye-small, eye-med, eye-large), then join the cssClass
       // variable with results.mindType value like so:
-      var mindTypeCssClass = results.mindType + '-' + cssClass;
+      //
+      // var mindTypeCssClass = results.mindType + '-' + cssClass;
     }
 
     $(".results-bar").addClass("results-" + results.mindType);

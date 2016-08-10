@@ -1236,7 +1236,7 @@ li.create {
     }
     
     .strengths-container {
-	    width: 80%;
+	    max-width: 80%;
 	}
 	
 	.music-mind-page .results-bar h1 strong {
@@ -1318,4 +1318,5 @@ li.create {
 	}
 
 }
+
 

@@ -923,7 +923,7 @@ li.create {
 	height:160px;
 	line-height:160px;
 	vertical-align:middle;
-	padding-bottom:10px;
+    margin-bottom:8px;
 }
 
 #eye-result.large {
@@ -948,7 +948,7 @@ li.create {
     line-height: 106px;
     vertical-align: middle;
     margin: auto;
-    padding-bottom:10px;
+    margin-bottom:8px;
 
 }
 
@@ -975,7 +975,7 @@ li.create {
     line-height: 86px;
     vertical-align: middle;
     margin: auto;
-	padding-bottom:10px;
+    margin-bottom:8px;
 }
 
 #eye-result.small {

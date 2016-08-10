@@ -670,7 +670,7 @@ button:disabled, button:disabled:hover {
 
 .control:hover input ~ .control_indicator,
 .control input:focus ~ .control_indicator {
-	background: #225D75;
+	background-color: #225D75;
 	transition:.0s;
 }
 
@@ -680,13 +680,13 @@ button:disabled, button:disabled:hover {
 .control input:focus ~ .control_indicator.ci-ear,
 .control:hover input ~ .control_indicator.ci-create,
 .control input:focus ~ .control_indicator.ci-create, {
-	background: #225D75;
+	background-color: #225D75;
 	opacity:.5;
 	}
 
 /* Checked state */
 .control input:checked ~ .control_indicator {
-	background: #EE5F44;
+	background-color: #EE5F44;
 	transition:.0s;
 }
 
@@ -697,7 +697,7 @@ button:disabled, button:disabled:hover {
 	width: 6px;
 	height: 6px;
 	border-radius: 50%;
-	background: #fff;
+	background-color: #fff;
 }
 
 /* New radio buttons */
@@ -1297,5 +1297,4 @@ li.create {
 	}
 
 }
-
 

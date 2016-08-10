@@ -806,12 +806,24 @@ button:disabled, button:disabled:hover {
     background-image: url('../images/mm-eye.png');
 }
 
+.tb-answer-one:hover .control_indicator.ci-eye {
+    background-image: url('../images/mm-eye-rev.png');
+}
+
 .control_indicator.ci-ear {
     background-image: url('../images/mm-ear.png');
 }
 
+.tb-answer-one:hover .control_indicator.ci-ear {
+    background-image: url('../images/mm-ear-rev.png');
+}
+
 .control_indicator.ci-create {
-    background-image: url('../images/mm-creative.png');
+    background-image: url('../images/mm-create.png');
+}
+
+.tb-answer-one:hover .control_indicator.ci-create {
+    background-image: url('../images/mm-create-rev.png');
 }
 
 /* Icons */
@@ -1297,4 +1309,5 @@ li.create {
 	}
 
 }
+
 

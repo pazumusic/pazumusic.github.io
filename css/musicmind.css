@@ -496,7 +496,7 @@ button:disabled, button:disabled:hover {
 
 .results-end-1 {margin:0 0 0 auto;}
 
-.results-end-2 {margin: 0 auto 0 0;}
+.results-end-2 {margin: 0 auto 0 25px;}
 
 
 .results-wrap {
@@ -1285,6 +1285,10 @@ li.create {
 	
 	#li-eye-result.small, #li-ear-result.small, #li-create-result.small	{
 		width:73px;
+	}
+	
+	.results-end-2 {
+    margin: 0 auto 0 0;
 	}
 
 }

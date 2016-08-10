@@ -248,21 +248,15 @@ $(function () {
 
   function displayResults() {
     var results = getMusicMindResults();
-    // NOTE: Add the real name of the css classes to apply for size in here from smallest to largest.
     var cssClasses = ["small", "med", "large"];
 
-    // NOTE: These results are ordered from smallest to largest
     for (var key in results.breakdown) {
       $("#" + key + "-result").text(results.breakdown[key]);
-      // NOTE: This will apply the CSS class by order. Uncomment when ready.
-      // var cssClass = cssClasses.shift();
-      // $("#" + key + "-result").addClass(cssClass);
+      var cssClass = cssClasses.shift();
+      $("#" + key + "-result").addClass(cssClass);
+      $("#" + "li-" + key + "-result").addClass(cssClass);
 
-      // NOTE: If you have a set of small-to-large CSS classes based
-      // on mind type (ie. eye-small, eye-med, eye-large), then join the cssClass
-      // variable with results.mindType value like so:
-      //
-      // var mindTypeCssClass = results.mindType + '-' + cssClass;
+      var mindTypeCssClass = results.mindType + '-' + cssClass;
     }
 
     $(".results-bar").addClass("results-" + results.mindType);

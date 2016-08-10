@@ -1240,7 +1240,8 @@ li.create {
 	}
 	
 	.music-mind-page .results-bar h1 strong {
-		display:block;
+		display:inline-block;
+		font-size:.75em;
 	}
 	
 	.music-mind-page-5 h3 {
@@ -1317,6 +1318,4 @@ li.create {
 	}
 
 }
-
-
 

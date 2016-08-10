@@ -806,24 +806,32 @@ button:disabled, button:disabled:hover {
     background-image: url('../images/mm-eye.png');
 }
 
-.tb-answer-one:hover .control_indicator.ci-eye {
-    background-image: url('../images/mm-eye-rev.png');
+#tie-breaker .control:hover input ~ .control_indicator,
+#tie-breaker .control input:focus ~ .control_indicator {
+	background-color: #12718e;
+}
+
+.tb-answer-one:hover .control_indicator.ci-ear {
+    background-image: url('../images/mm-ear-rev.png');
+    transition:.1s;
 }
 
 .control_indicator.ci-ear {
     background-image: url('../images/mm-ear.png');
 }
 
-.tb-answer-one:hover .control_indicator.ci-ear {
-    background-image: url('../images/mm-ear-rev.png');
+.tb-answer-two:hover .control_indicator.ci-eye {
+    background-image: url('../images/mm-eye-rev.png');
+    transition:.1s;
 }
 
 .control_indicator.ci-create {
     background-image: url('../images/mm-create.png');
 }
 
-.tb-answer-one:hover .control_indicator.ci-create {
+.tb-answer-three:hover .control_indicator.ci-create {
     background-image: url('../images/mm-create-rev.png');
+    transition:.1s;
 }
 
 /* Icons */
@@ -1309,5 +1317,6 @@ li.create {
 	}
 
 }
+
 
 

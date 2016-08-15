@@ -274,13 +274,11 @@ $(function () {
       eye: "an EYE",
       create: "a CREATE"
     };
-    addthis_share = {
-      url: "pazumusic.com/music-mind",
-      title: "I have " + message[results.mindType] + " music mind! Find out yours at pazumusic.com/music-mind",
-      passthrough : {
-        twitter: {
-          text: "I have " + message[results.mindType] + " music mind! Find out yours at pazumusic.com/music-mind"
-        }
+
+    addthis_share.title = "I have " + message[results.mindType] + " music mind! Find out yours at pazumusic.com/music-mind";
+    addthis_share.passthrough = {
+      twitter: {
+        text: "I have " + message[results.mindType] + " music mind! Find out yours at pazumusic.com/music-mind"
       }
     };
   }

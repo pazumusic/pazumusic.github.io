@@ -36,8 +36,6 @@ $(function () {
       animEndEventName = animEndEventNames[Modernizr.prefixed("animation")],
       support = Modernizr.cssanimations;
 
-  var addthis_share = addthis_share || {};
-
   function init() {
     // App Init
     $pages.each(function (idx, elm) {

@@ -68,6 +68,7 @@ $(function () {
     // CTA Init
     $("#signup-form").submit(function(e) {
       e.preventDefault();
+      onSubmit($(e.currentTarget));
     });
     $("#final-signup-form").submit(function(e) {
       e.preventDefault();

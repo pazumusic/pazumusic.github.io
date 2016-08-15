@@ -37,6 +37,14 @@ $(function () {
       support = Modernizr.cssanimations;
 
   var addthis_share = addthis_share || {};
+  addthis_share = {
+  	passthrough : {
+  		twitter: {
+  			via: "TWITTER USERNAME",
+  			text: "TEXT"
+  		}
+  	}
+  };
 
   function init() {
     // App Init
@@ -269,10 +277,16 @@ $(function () {
       return $("#strengths-list").append("<li>" + item + "</li>");
     });
 
+    var message = {
+      ear: "an EAR",
+      eye: "an EYE",
+      create: "a CREATE"
+    };
+
     addthis_share = {
       passthrough : {
         twitter: {
-          text: "I have a " + results.mindType + " music mind! Find out yours at pazumusic.com/music-mind"
+          text: "I have " + message[results.mindType] + " music mind! Find out yours at pazumusic.com/music-mind"
         }
       }
     };

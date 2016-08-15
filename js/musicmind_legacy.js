@@ -66,19 +66,8 @@ $(function () {
     });
 
     // CTA Init
-    $("#signup-form").submit(function(e) {
-      e.preventDefault();
-      onSubmit($(e.currentTarget));
-    });
-    $("#final-signup-form").submit(function(e) {
-      e.preventDefault();
-      onSubmit($(e.currentTarget));
-    });
-
-    $("#yes-button").click(function (e) {
-      e.preventDefault();
-      onSubmit($("#signup-form"));
-    });
+    $("#signup-form").submit(onSubmit);
+    $("#final-signup-form").submit(onSubmit);
 
     $("#no-button").click(function (e) {
       e.preventDefault();
@@ -319,9 +308,9 @@ $(function () {
     });
   }
 
-  function onSubmit($form) {
-    // e.preventDefault();
-    // var $form = $(e.currentTarget);
+  function onSubmit(e) {
+    e.preventDefault();
+    var $form = $(e.currentTarget);
     var $emailField = $form.find("input[name=EMAIL]");
     var $errMessage = $form.find("#error-response");
 

@@ -36,6 +36,8 @@ $(function () {
       animEndEventName = animEndEventNames[Modernizr.prefixed("animation")],
       support = Modernizr.cssanimations;
 
+  var addthis_share = addthis_share || {};
+
   function init() {
     // App Init
     $pages.each(function (idx, elm) {
@@ -266,6 +268,14 @@ $(function () {
     strengths[results.mindType].forEach(function (item) {
       return $("#strengths-list").append("<li>" + item + "</li>");
     });
+
+    addthis_share = {
+      passthrough : {
+        twitter: {
+          text: "I have a " + results.mindType + " music mind! Find out yours at pazumusic.com/music-mind"
+        }
+      }
+    };
   }
 
   // CTA Functions

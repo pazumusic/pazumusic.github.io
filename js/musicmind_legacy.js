@@ -325,7 +325,7 @@ $(function () {
         isRegistered = true;
         nextPage(onNextPageInitiated);
       }, function(data) {
-        alert("Issue processing: " + data.toString());
+        alert("Looks like there was an issue signing you up: " + data.msg);
       });
     }
   }

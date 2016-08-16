@@ -232,7 +232,7 @@ h4.which-one {
     height: 80;
     font-family: proxima-nova,sans-serif;
     text-align: center;
-  	/*transition:.125s;*/
+	transition:.125s;
 	color:#fff;
 }
 
@@ -248,7 +248,7 @@ h4.which-one {
 .email-button:hover, #no-button.email-button:hover {
 	background-color:#333;
 	color:#efefef;
-	/*transition:.125s;*/
+	transition:.125s;
 	border-radius:50px;
 }
 
@@ -386,7 +386,7 @@ button:disabled, button:disabled:hover {
 /* --------------- Quiz Styles ---------------  */
 
 .quiz-question {
-  width: 100% !important;;
+  width: 100% !important;
   height: 200px;
   text-align: center;
 }

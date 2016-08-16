@@ -1056,12 +1056,12 @@ li.create {
 @media only screen and (max-width: 950px) {
 
 	.music-mind-page-current p {
-    	max-width: 90%;
+		max-width: 90%;
 	}
 
-    .music-mind-container {
-    	width: 100%;
-	    margin: 0 auto;
+	.music-mind-container {
+		width: 100%;
+		margin: 0 auto;
 	}
 
 	.music-mind-page h1 {
@@ -1069,16 +1069,15 @@ li.create {
 	}
 
 	.music-mind-page h1 {
-	    font-size: 2em;
-    	max-width: 95%;
-    	margin: 0 auto;
+		font-size: 2em;
+		margin: 0 auto;
 	}
 
 	.music-mind-body {
-    	padding-top: 10px;
-    	max-width:95%;
-    	margin:0 auto;
-    }
+		padding-top: 10px;
+		max-width:95%;
+		margin:0 auto;
+	}
 
 	p {
 		font-size: 1.5rem;
@@ -1089,20 +1088,20 @@ li.create {
 	}
 
 	.question-number {
-    	padding-bottom: 15px;
+		padding-bottom: 15px;
 	}
 
 	#question-number {
-	    font-size: 1rem;
+		font-size: 1rem;
 	}
 
 	h4 {
-    	font-size: 1rem;
+		font-size: 1rem;
 	}
 
 	.music-mind-button, .music-mind-page-button, .pazu-button a {
-        font-size: 1em;
- 	   padding: 0 20px;
+		font-size: 1em;
+		padding: 0 20px;
 	}
 
 	.flickity-viewport {
@@ -1116,51 +1115,51 @@ li.create {
 	}
 
 	.answer-section {
-    width: 230px;
-    margin-left: auto;
-    margin-right: auto;
+		width: 230px;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.music-mind-body p {
-    	font-size: 1.25em;
-    	padding: 5px 0 0 0;
+		font-size: 1.25em;
+		padding: 5px 0 0 0;
 	}
 
 	.music-mind-page-1 > .music-mind-body p {
-    font-size: 1em;
-    padding: 20px 0 30px 0;
+		font-size: 1em;
+		padding: 20px 0 30px 0;
 	}
 
 	.results-panel li {
    	 	display: inline-block;
-    	width: 80px;
-    	height: 75px;
-    	border: none;
-    	margin: 0 2px;
-    	background-size: 80px;
-    }
+		width: 80px;
+		height: 75px;
+		border: none;
+		margin: 0 2px;
+		background-size: 80px;
+	}
 
-    .radio-caption-tb-one, .radio-caption-tb-two, .radio-caption-tb-three {
-    	padding-top:10px;
-    }
+	.radio-caption-tb-one, .radio-caption-tb-two, .radio-caption-tb-three {
+		padding-top:10px;
+	}
 
-    .tb-answer-one, .tb-answer-two, .tb-answer-three {
-    	display: block;
-    	text-align: left;
-    }
+	.tb-answer-one, .tb-answer-two, .tb-answer-three {
+		display: block;
+		text-align: left;
+	}
 
-    .music-mind-page h1 span {
-    	padding-bottom:0;
-    	font-size:.75em;
-    }
+	.music-mind-page h1 span {
+		padding-bottom:0;
+		font-size:.75em;
+	}
 
-    .page-1-btm {
-    	top: 510px;
+    	.page-1-btm {
+		top: 510px;
 	}
 
 	.pathway-title {
-    padding-top: 16px;
-    font-size: 1.25em;
+		padding-top: 16px;
+		font-size: 1.25em;
 	}
 
 	.control-one, .control-two, .control-three, .control-four, .control-five, .control-six, .control-seven {
@@ -1221,9 +1220,9 @@ li.create {
 	}
 
 	.tb-answer-one, .tb-answer-two, .tb-answer-three {
-    	margin: 0 35px;
-    	width: 80%;
-    	min-height: 60px;
+	    	margin: 0 35px;
+	   	width: 80%;
+	    	min-height: 60px;
 	}
 
 	.radio-caption-tb-one, .radio-caption-tb-two, .radio-caption-tb-three {
@@ -1232,11 +1231,11 @@ li.create {
 	}
 
 	.music-mind-page-4 h4 {
-    	text-align: center;
-    }
+	    	text-align: center;
+	    }
 
-    .strengths-container {
-	    max-width: 80%;
+	.strengths-container {
+		    max-width: 80%;
 	}
 
 	.music-mind-page .results-bar h1 strong {
@@ -1245,8 +1244,8 @@ li.create {
 	}
 
 	.music-mind-page-5 h3 {
-	    font-size: 1.25em;
-    	line-height: 1.3em;
+		font-size: 1.25em;
+    		line-height: 1.3em;
 	}
 
 	.answer-section.tie-breaker {
@@ -1314,7 +1313,11 @@ li.create {
 	}
 
 	.results-end-2 {
-    	margin: 40px auto 0 0;
+    		margin: 40px auto 0 0;
+	}
+	
+	.your-results {
+		margin-bottom:30px;
 	}
 
 }

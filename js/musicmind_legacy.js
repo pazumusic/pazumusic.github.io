@@ -303,7 +303,7 @@ $(function () {
         return alert("Could not connect to the registration server. Please try again later.");
       },
       success: function success(data) {
-        return data.result != "success" ? onError() : onSuccess();
+        return data.result != "success" ? onError(data) : onSuccess();
       }
     });
   }
@@ -324,6 +324,8 @@ $(function () {
       register($form, function () {
         isRegistered = true;
         nextPage(onNextPageInitiated);
+      }, function() {
+        alert("Issue processing: " + data.toString());
       });
     }
   }

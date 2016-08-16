@@ -324,7 +324,7 @@ $(function () {
       register($form, function () {
         isRegistered = true;
         nextPage(onNextPageInitiated);
-      }, function() {
+      }, function(data) {
         alert("Issue processing: " + data.toString());
       });
     }

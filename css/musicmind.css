@@ -232,7 +232,7 @@ h4.which-one {
     height: 80;
     font-family: proxima-nova,sans-serif;
     text-align: center;
-	transition:.125s;
+  	/*transition:.125s;*/
 	color:#fff;
 }
 
@@ -248,7 +248,7 @@ h4.which-one {
 .email-button:hover, #no-button.email-button:hover {
 	background-color:#333;
 	color:#efefef;
-	transition:.125s;
+	/*transition:.125s;*/
 	border-radius:50px;
 }
 
@@ -338,12 +338,12 @@ button:disabled, button:disabled:hover {
 .pazu-button a {
 	width:250px;
 	}
-	
+
 .pazu-button a {
 	color:#000;
 	text-decoration:none;
 	}
-	
+
 .pazu-button a:hover {
 	color:#fff;
 	}
@@ -949,19 +949,19 @@ li.create {
 #eye-result.large {
 	background-image: url('../images/eye-large.png');
 	}
-	
+
 #ear-result.large {
 	background-image: url('../images/ear-large.png');
 	}
-	
+
 #create-result.large {
 	background-image: url('../images/create-large.png');
 	}
-	
+
 #li-eye-result.med, #li-ear-result.med, #li-create-result.med {
 	width:105px;
 }
-	
+
 #eye-result.med, #ear-result.med, #create-result.med {
 	width: 105px;
     height: 108px;
@@ -975,11 +975,11 @@ li.create {
 #eye-result.med {
 	background-image: url('../images/eye-med.png');
 	}
-	
+
 #ear-result.med {
 	background-image: url('../images/ear-med.png');
 	}
-	
+
 #create-result.med {
 	background-image: url('../images/create-med.png');
 	}
@@ -1001,28 +1001,28 @@ li.create {
 #eye-result.small {
 	background-image: url('../images/eye-small.png');
 	}
-	
+
 #ear-result.small {
 	background-image: url('../images/ear-small.png');
 	}
-	
+
 #create-result.small {
 	background-image: url('../images/create-small.png');
 	}
-	
+
 .results-text {
 	text-transform:uppercase;
 	font-size:1.25em;
 	}
-	
+
 .results-text-eye {
 	color:#;
 	}
-	
+
 .results-text-ear {
 	color:#;
 	}
-	
+
 .results-text-create {
 	color:#;
 	}
@@ -1039,7 +1039,7 @@ li.create {
 .music-mind-page-6 h1 {
 	margin-top:30% !important;
 	}
-	
+
 #final-cta .email-form {
 	background-color:transparent;
 }
@@ -1230,20 +1230,20 @@ li.create {
 		font-size: 14px;
 		padding-left: 25px;
 	}
-	
+
 	.music-mind-page-4 h4 {
     	text-align: center;
     }
-    
+
     .strengths-container {
 	    max-width: 80%;
 	}
-	
+
 	.music-mind-page .results-bar h1 strong {
 		display:inline-block;
 		font-size:.75em;
 	}
-	
+
 	.music-mind-page-5 h3 {
 	    font-size: 1.25em;
     	line-height: 1.3em;
@@ -1253,18 +1253,18 @@ li.create {
 		padding-top:0;
 		max-width:100%;
 	}
-	
+
 	.results-wrap {
 		width:100%;
 		display:block;
 		margin: 20px auto 0;
 		min-height: 360px;
 	}
-	
+
 	.results-end-1, .results-end-2 {
     	display: block;
 	}
-	
+
 	.icon-create, .icon-eye, .icon-ear {
 	    width: 75px;
 	    height: 75px;
@@ -1274,49 +1274,47 @@ li.create {
 	.music-mind-page-5 h3 {
 		margin-bottom:15px;
 	}
-	
+
 	.white-eye, .white-ear, .white-create {
 		margin: -20px auto;
 	}
-	
+
 	#eye-result.large, #ear-result.large, #create-result.large, #li-eye-result.large, #li-ear-result.large, #li-create-result.large {
 		width: 121px;
 		background-size: 129px;
 	}
-	
+
 	#eye-result.large, #ear-result.large, #create-result.large {
 		height:129px;
 		line-height:129px;
 	}
-	
+
 	#eye-result.med, #ear-result.med, #create-result.med, #li-eye-result.med, #li-ear-result.med, #li-create-result.med	{
 		width:81px;
 		background-size:contain;
 	}
-	
+
 	#eye-result.med, #ear-result.med, #create-result.med {
 		height:81px;
 		line-height:81px;
 	}
-	
+
 	#eye-result.small, #ear-result.small, #create-result.small, #li-eye-result.small, #li-ear-result.small, #li-create-result.small	{
 		width:68px;
 		background-size:contain;
 	}
-	
+
 	#eye-result.small, #ear-result.small, #create-result.small {
 		height:68px;
 		line-height:68px;
 	}
-	
+
 	#li-eye-result.small, #li-ear-result.small, #li-create-result.small	{
 		width:73px;
 	}
-	
+
 	.results-end-2 {
     	margin: 40px auto 0 0;
 	}
 
 }
-
-

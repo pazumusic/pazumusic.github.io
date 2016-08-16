@@ -1065,12 +1065,9 @@ li.create {
 	}
 
 	.music-mind-page h1 {
-		font-size:1em;
-	}
-
-	.music-mind-page h1 {
 		font-size: 2em;
 		margin: 0 auto;
+		padding-top:30px;
 	}
 
 	.music-mind-body {

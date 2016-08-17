@@ -27,7 +27,7 @@ $(function () {
   var ORG_CLASS_LIST_DATA_KEY = "originalClassList";
   var PAGE_IDX_KEY = "pageIndex";
 
-  var __debug_mode = true;
+  var __debug_mode = false;
   var __debug = false;
   var isAnimating = false,
       endCurrPage = false,

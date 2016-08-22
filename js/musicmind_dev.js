@@ -14,9 +14,9 @@ $(function () {
     create: ["Very imaginative and inventive", "Great sense of self-awareness", "Enjoys finding new ways to sing or play songs", "Expression is always an important factor"]
   };
   var shareMessages = {
-    create: "I have a CREATE music mind! This means that I like to learn music by experimenting with sounds and excel at creating original songs.",
-    ear: "I have an EAR music mind! This means that I like to learn music by listening to the notes and excel at matching rhythm and pitch.",
-    eye: "I have an EYE music mind! This means that I like to learn music by reading it on sheet music and excel at recognizing visual patterns and small details."
+    create: "This means that I like to learn music by experimenting with sounds and excel at creating original songs.",
+    ear: "This means that I like to learn music by listening to the notes and excel at matching rhythm and pitch.",
+    eye: "This means that I like to learn music by reading it on sheet music and excel at recognizing visual patterns and small details."
   };
 
   var $flickity = $(".main-carousel").flickity();
@@ -272,7 +272,13 @@ $(function () {
       return $("#strengths-list").append("<li>" + item + "</li>");
     });
 
-    addthis_share.title = shareMessages[results.mindType] + " Take this quiz to find yours!";
+    var message = {
+      ear: "an EAR",
+      eye: "an EYE",
+      create: "a CREATE"
+    };
+
+    addthis_share.title = "I have " + message[results.mindType] + " music mind! " + shareMessages[results.mindType] + " Take this quiz to find yours!";
     addthis_share.passthrough = {
       twitter: {
         text: "I have " + message[results.mindType] + " music mind! Find out yours at pazumusic.com/music-mind"

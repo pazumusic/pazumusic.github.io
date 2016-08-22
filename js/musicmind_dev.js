@@ -11,7 +11,7 @@ $(function () {
   var strengths = {
     eye: ["Great at following directions", "Can easily visualize the notes", "Great sense of musical balance", "Notices small differences in written music"],
     ear: ["Can easily remember melodies and lyrics", "Frequently humming or singing music", "Learns better while studying to music", "Prefers to find notes by listening rather than reading"],
-    create: ["Very imaginative and inventive", "Great sense of self awareness", "Enjoys finding new ways to sing or play songs", "Expression is always an important factor"]
+    create: ["Very imaginative and inventive", "Great sense of self-awareness", "Enjoys finding new ways to sing or play songs", "Expression is always an important factor"]
   };
   var shareMessages = {
     create: "I have a CREATE music mind! This means that I like to learn music by experimenting with sounds and excel at creating original songs.",
